@@ -1,8 +1,8 @@
 # Harmonic 
 <img width="129" height="137" alt="HarmonicV1" src="https://github.com/user-attachments/assets/5d70f534-310b-4d22-b49a-0b4d17498088" />
 VIS Cybersecurity Dashboard 
-**Versão:** 1.0  
-**Data da Última Atualização:** 6 de outubro de 2025  
+Versão:1.0  
+Data da Última Atualização:6 de outubro de 2025  
 
 > **Aviso de Licença**  
 > Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo sob os termos da **Licença Pública Geral GNU**, conforme publicada pela **Free Software Foundation**, versão 3 da Licença, ou (a seu critério) qualquer versão posterior.  
