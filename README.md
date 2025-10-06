@@ -1,5 +1,6 @@
 # Harmonic 
-HARMONIC - VIS Cybersecurity Dashboard 
+<img width="129" height="137" alt="HarmonicV1" src="https://github.com/user-attachments/assets/5d70f534-310b-4d22-b49a-0b4d17498088" />
+VIS Cybersecurity Dashboard 
 **Versão:** 1.0  
 **Data da Última Atualização:** 6 de outubro de 2025  
 
@@ -20,6 +21,8 @@ Bem-vindo ao **HARMONIC**. Estes termos e condições definem as regras para o u
 Ao utilizar o HARMONIC, você concorda integralmente com estes termos. Caso discorde de qualquer parte, não utilize a ferramenta.  
 
 O **HARMONIC** é disponibilizado sob a **Licença Pública Geral GNU, versão 3 (GNU General Public License v3.0)**.  
+
+<img width="1921" height="994" alt="image" src="https://github.com/user-attachments/assets/db6427fd-fc5d-4d3e-9062-36efd10e6d8f" />
 
 ---
 
