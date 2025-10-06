@@ -158,3 +158,28 @@ Licenciado sob a GNU General Public License v3.0 (GPLv3)
 Consulte o arquivo LICENSE  para a versão oficial em inglês ou LICENSE_pt_BR  para a tradução não oficial em português.
 Consulte também: https://www.gnu.org/licenses/gpl-3.0.html
 
+---
+
+## Como Citar o HARMONIC
+
+Se você utilizou o HARMONIC em seu trabalho, pesquisa ou projeto, por favor, cite-o. Isso ajuda a dar visibilidade ao projeto e a reconhecer o esforço dos desenvolvedores.
+
+### Formato ABNT
+
+SILVA, Ricardo Conde Camillo; COSTA, Kelton Augusto Pontara da. **HARMONIC - VIS Cybersecurity Dashboard**. Versão 1.0. UNESP, 2025. Disponível em: <https://github.com/unixr/harmonic>. Acesso em: dd mmm. aaaa.
+
+### BibTeX
+
+Use a seguinte entrada BibTeX:
+
+```bibtex
+@software{SilvaCosta2025Harmonic,
+  author    = {Silva, Ricardo Conde Camillo and da Costa, Kelton Augusto Pontara},
+  title     = {{HARMONIC - VIS Cybersecurity Dashboard}},
+  year      = {2025},
+  version   = {1.0},
+  publisher = {{UNESP}},
+  date      = {2025-10-06},
+  url       = {[https://github.com/unixr/harmonic](https://github.com/unixr/harmonic)}
+}
+```
