@@ -1,4 +1,4 @@
-# harmonic 
+# Harmonic 
 HARMONIC - VIS Cybersecurity Dashboard 
 **Versão:** 1.0  
 **Data da Última Atualização:** 6 de outubro de 2025  
