@@ -13,6 +13,7 @@ version: "1.0"
 date-released: 2025-10-06
 repository-code: "https://github.com/unixr/harmonic"
 license: "GPL-3.0-only"
+doi: 10.5281/zenodo.17281598
 
 # Informações preferenciais para citação em BibTeX
 preferred-citation:
@@ -31,3 +32,4 @@ preferred-citation:
     name: "UNESP"
   date-released: 2025-10-06
   url: "https://github.com/unixr/harmonic"
+  doi: 10.5281/zenodo.17281598
