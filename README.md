@@ -152,5 +152,6 @@ Licença
 
 © 2025 Ricardo Conde Camillo Silva / Kelton Augusto Pontara da Costa – UNESP
 Licenciado sob a GNU General Public License v3.0 (GPLv3)
-https://www.gnu.org/licenses/gpl-3.0.html
+Consulte o arquivo LICENSE  para a versão oficial em inglês ou LICENSE_pt_BR  para a tradução não oficial em português.
+Consulte também: https://www.gnu.org/licenses/gpl-3.0.html
 
