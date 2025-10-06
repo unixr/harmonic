@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Definição do ambiente gráfico*/
+html, body {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: brown;
+}
+
+/*Separação vertical do Dashboard*/
+.dashboard {
+  display: grid;
+  grid-template-rows: 29% 50% 13%;
+  height: 100%;
+  width: 100%;
+  gap: 2px;
+  padding: 5px;
+}
+
+/*Separação horizontal da primeira linha do Dashboard*/
+.top-row {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  gap: 2px;
+}
+
+/*Separação horizontal da segunda linha do Dashboard*/
+.middle-row {
+  display: grid;
+  grid-template-columns: 36% 28% 36% ;
+  gap: 2px;
+}
+
+/*Separação horizontal da terceira linha do Dashboard*/
+.bottom-row {
+  display: grid;
+  grid-template-columns: 46% 8% 46%;
+  gap: 2px;
+}
+
+/*Definição do comportamento das caixas do Dashboard*/
+.box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.box h2 {
+  font-size: 1rem;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+canvas {
+  width: 85% !important;
+  height: 100% !important;
+  min-height: 280px;
+}
+
+#accuracyChartContainer,
+#lossChartContainer,
+#radarChartContainer {
+  width: 90%;
+  height: 290px;
+  margin-bottom: 6px;
+  align-items: center;
+  justify-items: center;
+}
+
+/*Definição do layout e comportwmentos dos piescharts*/
+.pies-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* grid-template-rows: repeat(1, 1fr); */
+  gap: 2px;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-items: center;
+}
+.pies-grid > div {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

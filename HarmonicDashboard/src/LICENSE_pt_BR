@@ -1,0 +1,96 @@
+HARMONIC - Ferramenta de Análise e Comparação de Resultados de Redes Neurais  
+Versão 1.0 (6 de outubro de 2025)  
+Desenvolvido por: Ricardo Conde Camillo Silva / UNESP  
+                  Kelton Augusto Pontara da Costa / UNESP  
+Contato: unixconde@gmail.com  
+
+-----------------------------------------------------------------------
+Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo
+sob os termos da Licença Pública Geral GNU, conforme publicada pela
+Free Software Foundation, na versão 3 da Licença, ou (a seu critério) qualquer
+versão posterior.
+
+Este programa é distribuído na esperança de que seja útil, mas
+SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de
+COMERCIABILIDADE ou ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO.
+Consulte a Licença Pública Geral GNU para mais detalhes.
+
+Você deve ter recebido uma cópia da Licença Pública Geral GNU
+junto com este programa. Caso contrário, consulte:
+https://www.gnu.org/licenses/gpl-3.0.html
+-----------------------------------------------------------------------
+
+=======================================================================
+              LICENÇA PÚBLICA GERAL GNU
+                Versão 3, 29 de junho de 2007
+=======================================================================
+
+Copyright (C) 2007 Free Software Foundation, Inc.
+<https://fsf.org/>
+
+Todos têm permissão para copiar e distribuir cópias literais
+deste documento de licença, mas não é permitido alterá-lo.
+
+### Preâmbulo
+
+A Licença Pública Geral GNU é uma licença livre, de copyleft, para
+software e outros tipos de obras.
+
+A maioria das licenças de software e outras obras práticas são projetadas
+para tirar de você a liberdade de compartilhar e alterar as obras.
+Por contraste, a Licença Pública Geral GNU é destinada a garantir
+a sua liberdade de compartilhar e alterar todas as versões de um programa —
+para garantir que ele permaneça software livre para todos os seus usuários.
+
+Nós, a Free Software Foundation, usamos a Licença Pública Geral GNU
+para a maioria de nossos softwares; ela também se aplica a qualquer outra obra
+liberada desta forma por seus autores. Você pode aplicá-la também
+aos seus programas.
+
+Quando falamos de software livre, estamos nos referindo à liberdade, não ao preço.
+Nossas Licenças Públicas Gerais são projetadas para garantir que você tenha
+a liberdade de distribuir cópias de software livre (e cobrar por elas se desejar),
+que você receba o código-fonte ou possa obtê-lo se quiser, que possa modificar
+o software ou usar partes dele em novos programas livres, e que você saiba
+que pode fazer essas coisas.
+
+Para proteger seus direitos, precisamos impedir que outros neguem esses direitos
+ou peçam que você os abra mão. Portanto, você tem certas responsabilidades
+se distribuir cópias do software ou se modificá-lo: responsabilidades de respeitar
+a liberdade dos outros.
+
+Por exemplo, se você distribuir cópias de tal programa, gratuitamente ou por uma taxa,
+deve passar aos destinatários as mesmas liberdades que recebeu. Deve assegurar-se
+de que eles também recebam ou possam obter o código-fonte. E deve mostrar-lhes
+estes termos para que conheçam seus direitos.
+
+Os desenvolvedores que usam a GPL protegem seus direitos em dois passos:
+(1) afirmam o copyright sobre o software e (2) oferecem esta Licença,
+dando permissão legal para copiar, distribuir e/ou modificar o software.
+
+Para a proteção dos desenvolvedores e autores, a GPL explica claramente
+que não há garantia para este software livre. Para ambos, usuários e autores,
+a GPL requer que versões modificadas sejam marcadas como alteradas,
+de modo que seus problemas não sejam atribuídos erroneamente aos autores
+de versões anteriores.
+
+Alguns dispositivos são projetados para negar aos usuários a capacidade
+de instalar ou executar versões modificadas do software neles contidos,
+embora o fabricante possa fazê-lo. Isso é fundamentalmente incompatível
+com o objetivo de proteger a liberdade dos usuários de mudar o software.
+Portanto, esta versão da GPL proíbe tal prática para esses produtos.
+
+Finalmente, todo programa é constantemente ameaçado por patentes de software.
+Queremos evitar o perigo especial de que patentes aplicadas a um programa livre
+possam torná-lo efetivamente proprietário. Para evitar isso, a GPL garante
+que patentes não possam ser usadas para tornar o programa não livre.
+
+Os termos e condições precisos para cópia, distribuição e modificação seguem abaixo.
+
+-----------------------------------------------------------------------
+As seções seguintes ("Termos e Condições") são mantidas idênticas
+à tradução oficial da GNU GPL v3, disponível em:
+https://www.gnu.org/licenses/translations.html
+-----------------------------------------------------------------------
+
+

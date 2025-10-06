@@ -1,0 +1,117 @@
+
+<!-- index.html -->
+
+<!-- @author Ricardo Conde Camillo Silva/UNESP e Kelton Augusto Pontara da Costa/UNESP
+Email: unixconde@gmail.com
+License: CC BY-NC			
+/ -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>HARMONIC - Cybersecurity Dashboard</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="dashboard">
+
+    <!--Primeira linha - gráficos: linha/radar/linha-->
+    <div class="top-row">
+      <div class="box" id="lineCharts">
+        <h2>Performance History</h2>
+        <div id="accuracyChartContainer">
+          <canvas id="accuracyChart"></canvas>
+        </div>
+      </div>
+
+      <div class="box" id="radarContainer">
+        <h2>Behavior Assessment: CIC IoT 2023</h2>
+        <div id="radarChartContainer">
+          <canvas id="radarChart"></canvas>
+        </div>
+      </div>
+
+      <div class="box" id="tablesContainer">
+        <h2>Performance History</h2>
+        <div id="lossChartContainer">
+          <canvas id="lossChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segunda linha - gráficos: matrizes de confusão -->
+    <div class="middle-row">
+      <div class="box" id="qcnn_matrices">
+        <h2>Best Performing QCNN</h2>
+        <div id="qcnn_matrix_chart"></div>
+      </div>
+
+      <div class="box" id="cnn_matrices">
+        <h2>Logits QCNN vs CNN</h2>
+      <div id="logitsSamplesTableContainer" class="box">
+        <h2>Amostras de Logits (20 por modelo)</h2>
+      </div>
+
+      <br>
+
+        <h2>Performance Summary: QCNN vs CNN</h2>
+         <div id="performanceSummaryTableContainer"></div>
+      </div>
+      <div class="box" id="cnn_matrices">
+        <h2>Best Performing CNN</h2>
+        <div id="cnn_matrix_chart"></div>
+      </div>
+    </div>
+
+    <!-- Terceira linha - gráficos: de pizza -->
+    <div class="bottom-row">
+      <div class="box" id="qcnn_pies">
+        <h2>Per-class detection: QCNN+TL</h2>
+        <div class="pies-grid">
+          <div id="pie_qcnn_benign"></div>
+          <div id="pie_qcnn_ddos"></div>
+          <div id="pie_qcnn_bruteforce"></div>
+          <div id="pie_qcnn_spoofing"></div>
+          <div id="pie_qcnn_dos"></div>
+          <div id="pie_qcnn_recon"></div>
+          <div id="pie_qcnn_webbased"></div>
+          <div id="pie_qcnn_mirai"></div>
+        </div>
+      </div>
+
+      <div class="box" id="cnn_matrices">
+        <div id="HARMONIC"></div>        
+        <img src="../data/HarmonicV1.png" alt="Cibersecurity">
+      </div>
+
+      <div class="box" id="cnn_pies">
+        <h2>Per-class detection: CNN+TL</h2>
+        <div class="pies-grid">
+          <div id="pie_cnn_benign"></div>
+          <div id="pie_cnn_ddos"></div>
+          <div id="pie_cnn_bruteforce"></div>
+          <div id="pie_cnn_spoofing"></div>
+          <div id="pie_cnn_dos"></div>
+          <div id="pie_cnn_recon"></div>
+          <div id="pie_cnn_webbased"></div>
+          <div id="pie_cnn_mirai"></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="data_loader.js"></script>
+  <script src="line_chart_accuracy.js"></script>
+  <script src="radarChart.js"></script>
+  <script src="line_chart_loss.js"></script>
+  <script src="visualize_matrix.js"></script>
+  <script src="performance_summary_table.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
