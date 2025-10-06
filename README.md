@@ -4,7 +4,7 @@ HARMONIC - VIS Cybersecurity Dashboard
 **Data da Última Atualização:** 6 de outubro de 2025  
 
 > **Aviso de Licença**  
-> Este prsograma é software livre: você pode redistribuí-lo e/ou modificá-lo sob os termos da **Licença Pública Geral GNU**, conforme publicada pela **Free Software Foundation**, versão 3 da Licença, ou (a seu critério) qualquer versão posterior.  
+> Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo sob os termos da **Licença Pública Geral GNU**, conforme publicada pela **Free Software Foundation**, versão 3 da Licença, ou (a seu critério) qualquer versão posterior.  
 >
 > Este programa é distribuído na esperança de que seja útil, mas **SEM QUALQUER GARANTIA**; sem mesmo a garantia implícita de **COMERCIABILIDADE** ou **ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO**.  
 > Consulte a **Licença Pública Geral GNU** para mais detalhes.  
