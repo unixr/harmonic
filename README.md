@@ -180,6 +180,7 @@ Use a seguinte entrada BibTeX:
   version   = {1.0},
   publisher = {{UNESP}},
   date      = {2025-10-06},
+  doi       = {10.5281/zenodo.17281598},
   url       = {[https://github.com/unixr/harmonic](https://github.com/unixr/harmonic)}
 }
 ```
