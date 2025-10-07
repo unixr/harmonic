@@ -1,156 +1,177 @@
-HARMONIC - VIS Cybersecurity Dashboard 
-**Versão:** 1.0  
-**Data da Última Atualização:** 6 de outubro de 2025  
+HARMONIC
+VIS Cybersecurity Dashboard
+Version: 1.0
+Last Updated: October 6, 2025
 
-> **Aviso de Licença**  
-> Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo sob os termos da **Licença Pública Geral GNU**, conforme publicada pela **Free Software Foundation**, versão 3 da Licença, ou (a seu critério) qualquer versão posterior.  
->
-> Este programa é distribuído na esperança de que seja útil, mas **SEM QUALQUER GARANTIA**; sem mesmo a garantia implícita de **COMERCIABILIDADE** ou **ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO**.  
-> Consulte a **Licença Pública Geral GNU** para mais detalhes.  
->
-> Você deve ter recebido uma cópia da **Licença Pública Geral GNU** junto com este programa.  
-> Caso contrário, consulte: [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)  
+======================================================================
 
----
+LICENSE NOTICE
 
-## Visão Geral  
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License, as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-Bem-vindo ao **HARMONIC**. Estes termos e condições definem as regras para o uso da nossa ferramenta computacional.  
-Ao utilizar o HARMONIC, você concorda integralmente com estes termos. Caso discorde de qualquer parte, não utilize a ferramenta.  
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
 
-O **HARMONIC** é disponibilizado sob a **Licença Pública Geral GNU, versão 3 (GNU General Public License v3.0)**.  
+You should have received a copy of the GNU General Public License along with this program.
+If not, see: [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)
 
----
+======================================================================
 
-## 1. Licença de Uso  
+== OVERVIEW ==
 
-O HARMONIC está licenciado sob a **GNU General Public License v3.0 (GPLv3)**.  
-Isso significa que você tem a liberdade de:  
+Welcome to HARMONIC. These terms and conditions outline the rules for using our computational tool.
+By using HARMONIC, you fully agree to these terms. If you disagree with any part, do not use the tool.
 
-- **Executar** o programa para qualquer propósito.  
-- **Estudar** como o programa funciona e adaptá-lo às suas necessidades.  
-- **Redistribuir** cópias para ajudar outras pessoas.  
-- **Melhorar** o programa e liberar suas modificações ao público.  
+HARMONIC is made available under the GNU General Public License, version 3 (GNU General Public License v3.0).
 
-Desde que você siga os seguintes termos:  
+----------------------------------------------------------------------
 
-- **Manter a mesma licença:** Qualquer redistribuição ou trabalho derivado do HARMONIC deve ser licenciado também sob a GNU GPL v3.0.  
-- **Disponibilizar o código-fonte:** Se você distribuir cópias modificadas do HARMONIC, deve disponibilizar o código-fonte correspondente.  
-- **Preservar avisos de direitos autorais:** Todos os avisos de copyright e a referência à licença original devem ser mantidos.  
-- **Sem garantias:** O software é fornecido “como está”, sem garantias.  
+== 1. LICENSE OF USE ==
 
- **Leia a licença completa:**  
-[https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)  
+HARMONIC is licensed under the GNU General Public License v3.0 (GPLv3).
+This means you have the freedom to:
 
----
+  - Run the program for any purpose.
+  - Study how the program works and adapt it to your needs.
+  - Redistribute copies to help others.
+  - Improve the program and release your modifications to the public.
 
-### 1.1. Atribuição e Créditos  
+Provided that you follow these terms:
 
-Ao utilizar, modificar ou redistribuir o HARMONIC, ou qualquer trabalho derivado, inclua o seguinte aviso:  
+  - Keep the same license: Any redistribution or derivative work of HARMONIC must also be licensed under the GNU GPL v3.0.
+  - Make the source code available: If you distribute modified copies of HARMONIC, you must make the corresponding source code available.
+  - Preserve copyright notices: All copyright notices and references to the original license must be maintained.
+  - No warranties: The software is provided "as is," without warranties.
 
-> “Este trabalho utiliza a ferramenta computacional **HARMONIC 1.0**, desenvolvida por **Ricardo Conde Camillo Silva/UNESP** e **Kelton Augusto Pontara da Costa/UNESP**, licenciada sob a **GNU General Public License v3.0**.”
+Read the full license: [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)
 
----
+-- 1.1. Attribution and Credits --
 
-## 2. Isenção de Garantia  
+When using, modifying, or redistributing HARMONIC, or any derivative work, include the following notice:
 
-O **HARMONIC** é fornecido **“COMO ESTÁ”**, sem qualquer tipo de garantia, expressa ou implícita.  
-Isso inclui, mas não se limita a, garantias de comercialização, adequação a um propósito específico e não violação de direitos de terceiros.  
+  "This work uses the HARMONIC 1.0 computational tool, developed by Ricardo Conde Camillo Silva/UNESP and Kelton Augusto Pontara da Costa/UNESP, licensed under the GNU General Public License v3.0."
 
-Os desenvolvedores e contribuidores **não garantem** que a ferramenta atenderá às suas necessidades, que seu funcionamento será ininterrupto ou livre de erros, ou que quaisquer defeitos serão corrigidos.  
-Todo o risco relacionado à qualidade e ao desempenho da ferramenta é assumido por você.  
+----------------------------------------------------------------------
 
----
+== 2. DISCLAIMER OF WARRANTY ==
 
-## 3. Limitação de Responsabilidade  
+HARMONIC is provided “AS IS”, without any kind of warranty, express or implied.
+This includes, but is not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement of third-party rights.
 
-Em nenhuma circunstância, os autores, detentores dos direitos autorais ou contribuidores do HARMONIC serão responsáveis por quaisquer danos diretos, indiretos, incidentais, especiais, exemplares ou consequenciais (incluindo, mas não se limitando a, aquisição de bens ou serviços substitutos; perda de uso, dados ou lucros; ou interrupção de negócios), sob qualquer teoria de responsabilidade — seja contratual, objetiva ou extracontratual — decorrentes do uso desta ferramenta, mesmo que avisados da possibilidade de tais danos.  
+The developers and contributors do not guarantee that the tool will meet your needs, that its operation will be uninterrupted or error-free, or that any defects will be corrected.
+The entire risk related to the quality and performance of the tool is assumed by you.
 
----
+----------------------------------------------------------------------
 
-## 4. Uso da Ferramenta  
+== 3. LIMITATION OF LIABILITY ==
 
-Você concorda em **não utilizar** o HARMONIC para qualquer finalidade ilegal, difamatória ou que infrinja direitos de terceiros.  
-Você é o único responsável pelos resultados obtidos com o uso da ferramenta e por quaisquer dados processados com ela.  
+In no event shall the authors, copyright holders, or contributors of HARMONIC be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption), under any theory of liability—whether in contract, strict liability, or tort—arising from the use of this tool, even if advised of the possibility of such damages.
 
----
+----------------------------------------------------------------------
 
-## 5. Modificações nos Termos  
+== 4. USE OF THE TOOL ==
 
-Os desenvolvedores do HARMONIC reservam-se o direito de modificar estes termos e condições a qualquer momento.  
-É sua responsabilidade verificar periodicamente se há alterações.  
-O uso continuado da ferramenta após a publicação de alterações constitui aceitação dos novos termos.  
+You agree not to use HARMONIC for any illegal, defamatory, or rights-infringing purpose.
+You are solely responsible for the results obtained from using the tool and for any data processed with it.
 
----
+----------------------------------------------------------------------
 
-## 6. Contato  
+== 5. MODIFICATIONS TO TERMS ==
 
-Para mais informações, dúvidas ou para reportar problemas, entre em contato:  
-**unixconde@gmail.com**  
+The developers of HARMONIC reserve the right to modify these terms and conditions at any time.
+It is your responsibility to periodically check for changes.
+Continued use of the tool after the publication of changes constitutes acceptance of the new terms.
 
----
+----------------------------------------------------------------------
 
-# Utilização  
+== 6. CONTACT ==
 
-A ferramenta **HARMONIC**, em sua primeira versão, está dimensionada para a **comparação de resultados de treinamentos de redes neurais** entre dois experimentos que contemplem **8 classes**.  
+For more information, questions, or to report issues, please contact:
+unixconde@gmail.com
 
-Experimentos com número diferente de classes **demandarão refatoração no código** por parte do usuário — o que é permitido e incentivado sob a **GNU GPL v3.0**, desde que as modificações também sejam distribuídas sob a mesma licença.  
+======================================================================
 
----
+USAGE
 
-## 1. Estrutura dos Arquivos CSVs  
+The HARMONIC tool, in its first version, is designed for the comparison of neural network training results between two experiments that cover 8 classes.
 
-O HARMONIC realiza comparações entre resultados obtidos de dois modelos de redes neurais, salvos em arquivos CSV, independentemente da arquitetura das redes.  
+Experiments with a different number of classes will require code refactoring by the user—which is permitted and encouraged under the GNU GPL v3.0, as long as the modifications are also distributed under the same license.
 
-Os arquivos devem seguir as seguintes convenções:  
+----------------------------------------------------------------------
 
-- `Model1_Results.csv` e `Model2_Results.csv`: resultados das métricas de cada modelo.  
-- `Model1_Logits.csv` e `Model2_Logits.csv`: resultados brutos dos **logits** de cada modelo.  
+== 1. CSV FILE STRUCTURE ==
 
----
+HARMONIC performs comparisons between results obtained from two neural network models, saved in CSV files, regardless of the network architecture.
 
-## 2. Estrutura dos Arquivos `Model1_Results.csv` e `Model2_Results.csv`  
+The files must follow these conventions:
 
-Epoch   Phase   Loss   Accuracy   Precision   Recall   AUC   MSE   Confusion Matrix
+  - Model1_Results.csv and Model2_Results.csv: results of each model's metrics.
+  - Model1_Logits.csv and Model2_Logits.csv: raw results of each model's logits.
 
----
+----------------------------------------------------------------------
 
-## 3. Estrutura dos Arquivos `Model1_Logits.csv` e `Model2_Logits.csv`
+== 2. STRUCTURE OF Model1_Results.csv AND Model2_Results.csv FILES ==
 
-Epoch   Phase   Target   logit_0   logit_1   logit_2   logit_3   logit_4   logit_5   logit_6   logit_7
+Epoch Phase Loss Accuracy Precision Recall AUC MSE Confusion Matrix
 
----
+----------------------------------------------------------------------
 
-## 4. Execução da Ferramenta
+== 3. STRUCTURE OF Model1_Logits.csv AND Model2_Logits.csv FILES ==
 
-A ferramenta pode ser executada em um servidor Apache ou no Visual Studio Code com a extensão Live Server.
+Epoch Phase Target logit_0 logit_1 logit_2 logit_3 logit_4 logit_5 logit_6 logit_7
 
----
+----------------------------------------------------------------------
 
-## 5. Funcionalidades Interativas
+== 4. RUNNING THE TOOL ==
 
-O dashboard do HARMONIC foi projetado para oferecer uma análise dinâmica e focada dos resultados.
+The tool can be run on an Apache server or in Visual Studio Code with the Live Server extension.
 
- Gráficos Interativos
+----------------------------------------------------------------------
 
-Os gráficos Accuracy per Epoch, Loss per Epoch e o gráfico Radar são interativos.
-Para isolar a visualização e analisar o comportamento de um modelo ou fase específica (Treino/Validação), basta clicar na legenda correspondente.
-Um novo clique retorna à visualização completa.
+== 5. INTERACTIVE FEATURES ==
 
-Visualização de Logits
+The HARMONIC dashboard was designed to offer a dynamic and focused analysis of the results.
 
-Como os arquivos de logits podem conter milhares de registros, a ferramenta otimiza a exibição para garantir bom desempenho.
-A cada carregamento, o painel exibe automaticamente 7 exemplos aleatórios de cada modelo.
+Interactive Charts:
+The Accuracy per Epoch, Loss per Epoch, and Radar charts are interactive.
+To isolate the view and analyze the behavior of a specific model or phase (Train/Validation), simply click on the corresponding legend.
+Clicking it again returns to the full view.
 
-Para visualizar novas amostras, basta recarregar a página (pressionando F5).
-Novos logits serão sorteados e exibidos no dashboard.
+Logits Visualization:
+As the logits files can contain thousands of records, the tool optimizes the display to ensure good performance.
+Upon each load, the panel automatically displays 7 random examples from each model.
 
----
+To view new samples, simply reload the page (by pressing F5).
+New logits will be randomly selected and displayed on the dashboard.
 
-Licença
+----------------------------------------------------------------------
+
+== HOW TO CITE HARMONIC ==
+
+If you used HARMONIC in your work, research, or project, please cite it. This helps give visibility to the project and acknowledges the developers' efforts.
+
+Citation Format:
+SILVA, Ricardo Conde Camillo; COSTA, Kelton Augusto Pontara da. HARMONIC - VIS Cybersecurity Dashboard. Version 1.0. UNESP, 2025. Available at: [https://github.com/unixr/harmonic](https://github.com/unixr/harmonic). Accessed on: dd mmm. yyyy.
+
+BibTeX:
+Use the following BibTeX entry:
+
+@software{SilvaCosta2025Harmonic,
+  author    = {Silva, Ricardo Conde Camillo and da Costa, Kelton Augusto Pontara},
+  title     = {{HARMONIC - VIS Cybersecurity Dashboard}},
+  year      = {2025},
+  version   = {1.0},
+  publisher = {{UNESP}},
+  date      = {2025-10-06},
+  doi       = {10.5281/zenodo.17281598},
+  url       = {[https://github.com/unixr/harmonic](https://github.com/unixr/harmonic)}
+}
+
+----------------------------------------------------------------------
+
+== LICENSE ==
 
 © 2025 Ricardo Conde Camillo Silva / Kelton Augusto Pontara da Costa – UNESP
-Licenciado sob a GNU General Public License v3.0 (GPLv3)
-Consulte o arquivo LICENSE  para a versão oficial em inglês ou LICENSE_pt_BR  para a tradução não oficial em português.
-Consulte também: https://www.gnu.org/licenses/gpl-3.0.html
-
+Licensed under the GNU General Public License v3.0 (GPLv3)
+See the LICENSE file for the official English version or LICENSE_pt_BR for the unofficial Portuguese translation.
+See also: [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)
