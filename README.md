@@ -1,6 +1,6 @@
 # Harmonic
 
-\<img width="129" height="137" alt="HarmonicV1" src="[https://github.com/user-attachments/assets/5d70f534-310b-4d22-b49a-0b4d17498088](https://github.com/user-attachments/assets/5d70f534-310b-4d22-b49a-0b4d17498088)" /\>
+<img width="129" height="137" alt="HarmonicV1" src="https://github.com/user-attachments/assets/5d70f534-310b-4d22-b49a-0b4d17498088" />
 
 **VIS Cybersecurity Dashboard** **Version:** 1.0  
 **Last Updated:** October 6, 2025
