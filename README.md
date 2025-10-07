@@ -1,6 +1,6 @@
 # Harmonic
 
-<img width="129" height="137" alt="HarmonicV1" src="https://github.com/user-attachments/assets/5d70f534-310b-4d22-b49a-0b4d17498088" /> **VIS Cybersecurity Dashboard** **Version:** 1.0  **Last Updated:** October 6, 2025
+<img width="129" height="137" alt="HarmonicV1" src="https://github.com/user-attachments/assets/5d70f534-310b-4d22-b49a-0b4d17498088" /> **VIS Cybersecurity Dashboard**           **Version:** 1.0  **Last Updated:** October 6, 2025
 
 > **License Notice** \> This program is free software: you can redistribute it and/or modify it under the terms of the **GNU General Public License**, as published by the **Free Software Foundation**, either version 3 of the License, or (at your option) any later version.
 >
