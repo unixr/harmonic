@@ -21,7 +21,7 @@ By using HARMONIC, you fully agree to these terms. If you disagree with any part
 
 **HARMONIC** is made available under the **GNU General Public License, version 3 (GNU General Public License v3.0)**.
 
-\<img width="1921" height="994" alt="image" src="[https://github.com/user-attachments/assets/db6427fd-fc5d-4d3e-9062-36efd10e6d8f](https://github.com/user-attachments/assets/db6427fd-fc5d-4d3e-9062-36efd10e6d8f)" /\>
+<img width="1921" height="994" alt="image" src="https://github.com/user-attachments/assets/db6427fd-fc5d-4d3e-9062-36efd10e6d8f" />
 
 -----
 
