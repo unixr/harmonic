@@ -16,9 +16,11 @@ document.addEventListener('DOMContentLoaded', async function() {
     const cnnLogitsPath  = "../data/Model2_Logits_CNN.csv";
 
     const classMapping = {
-        0: 'BENIGN', 1: 'DDOS', 2: 'BRUTEFORCE', 3: 'SPOOFING',
-        4: 'DOS', 5: 'RECON', 6: 'WEBBASED', 7: 'MIRAI'
+        0: 'BENIGN', 1: 'BRUTEFORCE', 2: 'DDOS', 3: 'DOS',
+        4: 'MIRAI', 5: 'RECON', 6: 'SPOOFING', 7: 'WEBBASED'
     };
+
+    const classOrder = [0, 1, 2, 3, 4, 5, 6, 7];
 
     // Carregamento dos 4 CSVs
     try {
@@ -166,88 +168,78 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
 
     function drawAllPieCharts(qcnnMatrix, cnnMatrix) {
-        Object.keys(classMapping).forEach(classIndexStr => {
-            const classIndex = parseInt(classIndexStr, 10);
-            const className = classMapping[classIndex];
-            const classNameLower = className.toLowerCase();
+    if (!Array.isArray(classOrder) || classOrder.length === 0) {
+        console.warn("classOrder não definido ou vazio. Abortando drawAllPieCharts.");
+        return;
+    }
 
-            const qcnnPieData = calculatePieData(qcnnMatrix, classIndex);
-            drawPieChart(`#pie_qcnn_${classNameLower}`, qcnnPieData, className);
+    function resolveParent(prefix) {
+        const explicit = document.querySelector(`#${prefix}_container`);
+        if (explicit) return explicit;
 
-            const cnnPieData = calculatePieData(cnnMatrix, classIndex);
-            drawPieChart(`#pie_cnn_${classNameLower}`, cnnPieData, className);
+        for (const idx of classOrder) {
+            const name = classMapping[idx];
+            if (!name) continue;
+            const id = `${prefix}_${name.toLowerCase()}`;
+            const el = document.getElementById(id);
+            if (el && el.parentElement) return el.parentElement;
+        }
+        return null;
+    }
+
+    const qcnnParent = resolveParent("pie_qcnn");
+    const cnnParent  = resolveParent("pie_cnn");
+
+    if (!qcnnParent) console.warn("Não foi possível resolver parent para pie_qcnn (nenhum container encontrado).");
+    if (!cnnParent)  console.warn("Não foi possível resolver parent para pie_cnn (nenhum container encontrado).");
+
+    classOrder.forEach(classIndex => {
+        const className = classMapping[classIndex];
+        if (!className) {
+            console.warn(`Classe ${classIndex} não encontrada em classMapping`);
+            return;
+        }
+        const lname = className.toLowerCase();
+
+        if (qcnnParent) {
+            const qcnnEl = document.getElementById(`pie_qcnn_${lname}`);
+            if (qcnnEl) qcnnParent.appendChild(qcnnEl);
+            // se o elemento não existir, não criamos (conforme solicitado)
+        }
+
+        if (cnnParent) {
+            const cnnEl = document.getElementById(`pie_cnn_${lname}`);
+            if (cnnEl) cnnParent.appendChild(cnnEl);
+        }
+    });
+
+    classOrder.forEach(classIndex => {
+        const className = classMapping[classIndex];
+        if (!className) return;
+        const lname = className.toLowerCase();
+
+        // QCNN
+        const qcnnSelector = `#pie_qcnn_${lname}`;
+        if (document.querySelector(qcnnSelector)) {
+            const qcnnPieData = PieChart.calculatePieData(qcnnMatrix, classIndex);
+            const qcnnPie = new PieChart(qcnnSelector, qcnnPieData, className);
+            qcnnPie.draw();
+        } else {
+        }
+
+        // CNN
+        const cnnSelector = `#pie_cnn_${lname}`;
+        if (document.querySelector(cnnSelector)) {
+            const cnnPieData = PieChart.calculatePieData(cnnMatrix, classIndex);
+            const cnnPie = new PieChart(cnnSelector, cnnPieData, className);
+            cnnPie.draw();
+        } else {
+        }
         });
     }
 
-    function calculatePieData(matrix, classIndex) {
-        if (!matrix || !matrix[classIndex]) {
-            return [
-                { label: "Correct", value: 0 },
-                { label: "Incorrect", value: 0 }
-            ];
-        }
-        const correct = matrix[classIndex][classIndex] || 0;
-        const total = d3.sum(matrix[classIndex]) || 0;
-        const incorrect = total - correct;
-        return [
-            { label: "Correct", value: correct },
-            { label: "Incorrect", value: incorrect }
-        ];
-    }
 
-    function drawPieChart(containerSelector, data, title) {
-        const container = document.querySelector(containerSelector);
-        if (!container) return;
-
-        const size = Math.min(container.offsetWidth, 100);
-        const width = size, height = size, margin = 5;
-        const radius = (Math.min(width, height) / 2) - margin;
-
-        d3.select(containerSelector).select("svg").remove();
-
-        if (!data || data.length === 0 || d3.sum(data, d => d.value) === 0) {
-            d3.select(containerSelector).append("p")
-                .style("font-size", "12px").text(`${title} (sem dados)`);
-            return;
-        }
-
-        const svg = d3.select(containerSelector).append("svg")
-            .attr("width", width).attr("height", height)
-            .append("g").attr("transform", `translate(${width / 2}, ${height / 2})`);
-
-        const color = d3.scaleOrdinal()
-            .domain(["Correct", "Incorrect"])
-            .range(["#0bd695", "#f54927"]);
-
-        const pie = d3.pie().sort(null).value(d => d.value);
-        const arc = d3.arc().innerRadius(radius * 0.6).outerRadius(radius);
-
-        svg.selectAll(".arc").data(pie(data)).enter()
-            .append("path")
-            .attr("d", arc)
-            .attr("fill", d => color(d.data.label))
-            .attr("stroke", "white")
-            .style("stroke-width", "2px");
-
-        const total = d3.sum(data, d => d.value);
-        const correctValue = data.find(d => d.label === "Correct")?.value || 0;
-        const percentage = total > 0 ? (correctValue / total * 100).toFixed(1) : 0;
-
-        svg.append("text")
-            .attr("text-anchor", "middle")
-            .attr("dy", "-0.5em")
-            .style("font-size", "10px")
-            .style("font-weight", "bold")
-            .text(title);
-
-        svg.append("text")
-            .attr("text-anchor", "middle")
-            .attr("dy", "0.8em")
-            .style("font-size", "12px")
-            .style("font-weight", "bold")
-            .text(`${percentage}%`);
-    }
-
+    
     function mostrarErroNaTela(msg) {
         const body = d3.select("body");
         body.html("");
