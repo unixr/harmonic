@@ -18,7 +18,7 @@ async function plotConfusionMatricesFromCSV(csvFile, selector, epochToPlot, mode
     const cells = g.selectAll(".cell").data(matrix.flatMap((row, i) => row.map((value, j) => ({ row: i, col: j, value })))).enter().append("g").attr("class", "cell");
     cells.append("rect").attr("x", d => d.col * cellSize).attr("y", d => d.row * cellSize).attr("width", cellSize).attr("height", cellSize).attr("fill", d => colorScale(d.value)).attr("stroke", "#ccc");
     cells.append("text").attr("x", d => d.col * cellSize + cellSize / 2).attr("y", d => d.row * cellSize + cellSize / 2).attr("text-anchor", "middle").attr("dominant-baseline", "central").attr("fill", d => d.value > maxVal / 2 ? "white" : "black").text(d => d.value);
-    const labels = {0: 'BENIGN', 1: 'DDOS', 2: 'BRUTEFORCE', 3: 'SPOOFING', 4: 'DOS', 5: 'RECON', 6: 'WEBBASED', 7: 'MIRAI'};
+    const labels = {0: 'BENIGN', 1: 'BRUTEFORCE', 2: 'DDOS', 3: 'DOS', 4: 'MIRAI', 5: 'RECON', 6: 'SPOOFING', 7: 'WEBBASED'};
     const labelValues = Object.values(labels);
     g.selectAll(".y-label").data(labelValues).enter().append("text").attr("class", "axis-label").attr("x", -15).attr("y", (d, i) => i * cellSize + cellSize / 2).attr("text-anchor", "end").attr("dominant-baseline", "central").text(d => d);
     g.selectAll(".x-label").data(labelValues).enter().append("text").attr("class", "axis-label").attr("transform", (d, i) => `translate(${i * cellSize + cellSize / 2}, -15) rotate(-45)`).style("text-anchor", "start").text(d => d);
