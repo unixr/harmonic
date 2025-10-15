@@ -204,7 +204,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         if (qcnnParent) {
             const qcnnEl = document.getElementById(`pie_qcnn_${lname}`);
             if (qcnnEl) qcnnParent.appendChild(qcnnEl);
-            // se o elemento não existir, não criamos (conforme solicitado)
         }
 
         if (cnnParent) {
