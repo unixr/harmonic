@@ -146,7 +146,7 @@ New logits will be randomly selected and displayed on the dashboard.
 
 ----------------------------------------------------------------------
 
-== 6. Note on LABEL Definition ==
+== 6. NOTE ON LABEL DEFINITION ==
 
 It is crucial to ensure that the label indices match the exact sequence used during the training of the neural network models.
 
