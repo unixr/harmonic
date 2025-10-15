@@ -148,6 +148,26 @@ New logits will be randomly selected and displayed on the dashboard.
 
 -----
 
+## 6\.
+========================================
+      NOTE ON LABEL DEFINITION
+========================================
+
+It is crucial to ensure that the label indices match the exact sequence used during the training of the neural network models.
+
+For algorithms implemented in Python, this can be verified with the following code snippet, which should be inserted after the dataset loading step:
+
+
+    # Displays the order of classes detected during loading
+    print("Detected classes (order used for mapping):")
+    for idx, name in enumerate(image_datasets["train"].classes):
+        print(f"{idx}: {name}")
+
+
+Finally, please remember that the Harmonic tool is a reference model, designed as a starting point. Therefore, we encourage its refinement and adaptation for the specifics of each use case.
+
+-----
+
 ## How to Cite HARMONIC
 
 If you used HARMONIC in your work, research, or project, please cite it. This helps give visibility to the project and acknowledges the developers' efforts.
